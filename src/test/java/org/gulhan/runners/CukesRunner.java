@@ -64,12 +64,6 @@ public class CukesRunner {
             driverManager.setDriver(null);
 
         }
-        // if (props.getProperty("remoteOrLocal").equalsIgnoreCase("Local")) {
-        //     ServerManager serverManager = new ServerManager();
-        //     if (serverManager.getServer() != null) {
-        //         serverManager.getServer().stop();
-        //     }
-        // }
     }
 
 }
