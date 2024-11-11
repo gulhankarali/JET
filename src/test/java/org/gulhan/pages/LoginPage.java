@@ -2,6 +2,7 @@ package org.gulhan.pages;
 
 import org.openqa.selenium.WebElement;
 
+import io.appium.java_client.MobileBy;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 
 public class LoginPage extends BasePage {
@@ -38,6 +39,13 @@ public class LoginPage extends BasePage {
 
     public void clickEnterAddressManually() {
         text_enterAddressManually.click();
+    }
+    
+    @SuppressWarnings("deprecation")
+    public WebElement getStartCycleButton() {
+        return driver.findElement(MobileBy.AndroidUIAutomator(
+            "new UiSelector().className(\"android.widget.ScrollView\")"
+        ));
     }
 
 }
